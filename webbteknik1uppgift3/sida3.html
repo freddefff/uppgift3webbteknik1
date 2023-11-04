@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FikaPlugg</title>
+    <link rel="stylesheet" href="css1.css">
+
+
+</head>
+
+<body class="sida3-bakgrund">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="sida1.html">Hem</a></li>
+                <li><a href="sida2.html">Platser</a></li>
+                <li><a href="sida3.html">Om oss/Kontakt</a></li>
+                <li><a href="rapport.html">Rapport</a></li>
+            </ul>
+
+            <ul class="tab-menu">
+                <li><a href="#omoss">Om oss</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+
+        <section id="omoss" class="tab-content">
+            <h2>Om oss</h2>
+            <p>Välkomna till FikaPlugg! Vi finns här för dig när du vill hitta ett studentvänligt fik där du i lugn och
+                ro kan studera utan en stressig och hetsig miljö</p>
+            <h3>Vår historia</h3>
+            <p>Drivna av en gemensam vison att underlätta för studenter som vill ha någonstans att studera och avnjuta
+                en kaffe föddes idén kring FikaPlugg! en webbsida som hjälper dig att hitta de mest studievänliga
+                kaféerna i hela Sverige! Platserna som rekommenderas är noga utvalda baserad på recensioner och
+                personliga erfarenheter</p>
+        </section>
+
+        <section id="kontakt" class="tab-content">
+            <h2>Kontakt</h2>
+            <p>Skicka din information så hör vi av oss!</p>
+            <form class="contact-form">
+
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="valavkontakt">Välj hur vi ska kontakta dig:</label>
+                <select id="valavkontakt" name="valavkontakt">
+                    <option value="Telefon">Telefon</option>>
+                    <option value="E-mail">E-mail</option>>
+                </select>
+
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div class="button-container">
+                    <button type="submit">Skicka</button>
+                </div>
+
+
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>FikaPlugg 2023</p>
+    </footer>
+
+</body>
+
+</html>
