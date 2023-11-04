@@ -1,0 +1,165 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    line-height: 1.8;
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+}
+
+.sida1-bakgrund {
+    background: url('FikaPluggBakgrundSida1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.sida2-bakgrund {
+    background: url('FikaPluggBakgrundSida2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.sida3-bakgrund {
+    background: url('FikaPluggBakgrundSida3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: transparent;
+    color: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+button,
+nav ul li a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover,
+nav ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content:target {
+    display: block;
+}
+
+.tab-menu a {
+    padding: 10px 15px;
+    color: black;
+    border: transparent;
+    margin-right: 5px;
+}
+
+.tab-menu a:target {
+    background-color: black;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+.contact-form select {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contact-form button:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+@media (max-width: 768px) {
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form input[type="tel"],
+    .contact-form textarea
+    .contact-form select
+    .contact-form button {
+        font-size: 14px;
+    }
+}
+
+.tab-content:target h2,
+.tab-content:target h1,
+.tab-content:target p {
+    animation: fadeIn 1s;
+}
+
+
+@keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
